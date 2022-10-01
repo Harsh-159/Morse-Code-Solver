@@ -82,25 +82,25 @@ def getContours(img,method):
     return decrypt(code)
 
 #recording from webcam
-cap=cv2.VideoCapture(0)
-cap.set(10,72)
-decoded=''
-while True:
-    success, img=cap.read()
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img = cv2.GaussianBlur(img, (7, 7), 0)
-    img=cv2.Canny(img,100,100)
-    if getContours(img,"webcam")!='':
-        decoded=getContours(img,"webcam")
-    cv2.putText(img,decoded,(250,440),cv2.FONT_HERSHEY_PLAIN,2,(255,255,255),2)
-    cv2.imshow("WebCam",img)
-    if cv2.waitKey(1)& 0xFF==ord('s'):
-        break
+# cap=cv2.VideoCapture(0)
+# cap.set(10,72)
+# decoded=''
+# while True:
+#     success, img=cap.read()
+#     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#     img = cv2.GaussianBlur(img, (7, 7), 0)
+#     img=cv2.Canny(img,100,100)
+#     if getContours(img,"webcam")!='':
+#         decoded=getContours(img,"webcam")
+#     cv2.putText(img,decoded,(250,440),cv2.FONT_HERSHEY_PLAIN,2,(255,255,255),2)
+#     cv2.imshow("WebCam",img)
+#     if cv2.waitKey(1)& 0xFF==ord('s'):
+#         break
 
 #reading via image
-# img=cv2.imread('Resources/alphabet.jpg')
-# img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-# #img = cv2.GaussianBlur(img, (7, 7), 0)
-# img=cv2.Canny(img,100,100)
-# decoded=getContours(img,'image')
-# print(decoded)
+img=cv2.imread('Resources/alphabet.jpg')
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#img = cv2.GaussianBlur(img, (7, 7), 0)
+img=cv2.Canny(img,100,100)
+decoded=getContours(img,'image')
+print(decoded)
