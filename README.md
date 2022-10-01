@@ -1,13 +1,10 @@
 # Morse Code Solver
 
-
 <br/>
-<br/>
-
 
 <!-- ABOUT THE PROJECT -->
 ## **About The Project**
-This project aims to provide a valuable at
+This project aims at converting morse code present in photos and videos to english text. It first convertes them to contors only and then use area to differentiate between circle and recagles. For optimal use image model where image contains morse code only.
 
 
 <br/>
