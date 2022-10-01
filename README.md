@@ -4,7 +4,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## **About The Project**
-This project aims at converting morse code present in photos and videos to english text. It first convertes them to contors only and then use area to differentiate between circle and recagles. For optimal use image model where image contains morse code only.
+This project aims at converting morse code present in photos and videos to english text. It first convertes them to contors only and then use area to differentiate between circle and recagles. For optimal functioing use image model where image contains morse code only.
 
 
 <br/>
